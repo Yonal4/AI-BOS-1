@@ -1,0 +1,40 @@
+{
+  "name": "aibos",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"vite --port 5000 --host 0.0.0.0\"",
+    "build": "vite build",
+    "start": "node server.js",
+    "start:prod": "NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.3",
+    "@clerk/clerk-react": "^5.61.8",
+    "@clerk/express": "^2.1.26",
+    "@clerk/themes": "^2.4.57",
+    "@qdrant/js-client-rest": "^1.18.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "mammoth": "^1.12.0",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "serverless-http": "^3.2.0",
+    "stripe": "^18.5.0",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}
